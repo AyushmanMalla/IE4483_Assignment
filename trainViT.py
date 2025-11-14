@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
-from torchvision import transforms, models
+from torchvision import transforms, models, datasets
 from PIL import Image
 from tqdm import tqdm
 import csv # New: for logging
@@ -12,7 +12,7 @@ import csv # New: for logging
 # Hyperparameters
 LEARNING_RATE = 1e-4
 BATCH_SIZE = 128 # Updated batch size
-EPOCHS = 10 
+EPOCHS = 20 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 MODEL_NAME = "vit_b_16"
 NUM_WORKERS = 10 # Recommended for NSCC
@@ -42,40 +42,11 @@ val_transforms = transforms.Compose([
     transforms.Normalize(mean=IMAGENET_MEAN, std=IMAGENET_STD)
 ])
 
-class AnimalDataset(Dataset):
-    def __init__(self, data_dir, transform=None):
-        self.data_dir = data_dir
-        self.transform = transform
-        self.image_paths = []
-        self.labels = []
-        
-        self.class_to_idx = {cls: i for i, cls in enumerate(sorted(os.listdir(data_dir)))}
-        self.idx_to_class = {i: cls for cls, i in self.class_to_idx.items()}
+# Use ImageFolder for simplicity, as the directory structure matches
+train_dataset = datasets.ImageFolder(os.path.join(DATA_DIR, "train"), transform=train_transforms)
+val_dataset = datasets.ImageFolder(os.path.join(DATA_DIR, "val"), transform=val_transforms)
 
-        for cls_name, idx in self.class_to_idx.items():
-            cls_dir = os.path.join(data_dir, cls_name)
-            for img_name in os.listdir(cls_dir):
-                self.image_paths.append(os.path.join(cls_dir, img_name))
-                self.labels.append(idx)
-
-    def __len__(self):
-        return len(self.image_paths)
-
-    def __getitem__(self, idx):
-        img_path = self.image_paths[idx]
-        image = Image.open(img_path).convert("RGB")
-        label = self.labels[idx]
-        
-        if self.transform:
-            image = self.transform(image)
-            
-        return image, label
-
-# Create datasets and dataloaders
-train_dataset = AnimalDataset(TRAIN_DIR, transform=train_transforms)
-val_dataset = AnimalDataset(VAL_DIR, transform=val_transforms)
-
-train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True, num_workers=NUM_WORKERS, pin_memory=True)
+train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=NUM_WORKERS, pin_memory=True)
 val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=NUM_WORKERS, pin_memory=True)
 
 print(f"Using device: {DEVICE}")

@@ -1,37 +1,0 @@
---- Inference Job of ViT Started on x1000c0s5b0n0 at Sun Oct 26 20:44:22 +08 2025 ---
-Loading model from: best_vit_model.pth
-Found 500 images in the test set.
-Class mapping used for predictions: {'cat': 0, 'dog': 1}
-Running Inference:   0%|          | 0/4 [00:00<?, ?it/s]Running Inference:  25%|██▌       | 1/4 [00:13<00:40, 13.57s/it]Running Inference:  50%|█████     | 2/4 [00:13<00:11,  5.74s/it]Running Inference:  75%|███████▌  | 3/4 [00:14<00:03,  3.24s/it]Running Inference: 100%|██████████| 4/4 [00:14<00:00,  2.05s/it]Running Inference: 100%|██████████| 4/4 [00:14<00:00,  3.59s/it]
-
-Inference complete. Results saved to submission.csv
---- Job Finished at Sun Oct 26 20:46:03 +08 2025 ---
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			Resource Usage on 2025-10-26 20:46:04.854451:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	JobId: 12177299.pbs101
-	Project: personal-mall0006
-	Exit Status: 0
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	NCPUs: Requested(16), Used(16)
-	CPU Time Used: 00:00:10
-	Memory: Requested(110gb), Used(2285040kb)
-	Vmem Used: 101104156kb
-	Walltime: Requested(04:00:00), Used(00:01:41)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	Execution Nodes Used: (x1000c0s5b0n0:ncpus=16:ngpus=1:mem=115343360kb)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	GPU Duration: 1.71mins
-	GPU Power Consumed: 46.85W
-	GPU Max GPU Memory Used: 1.07GB
-	Memory Throughput Rate (Average): x1000c0s5b0n0:(gpu0:0%)
-	Memory Throughput Rate (Max): x1000c0s5b0n0:(gpu0:0%)
-	Memory Throughput Rate (Min): x1000c0s5b0n0:(gpu0:0%)
-	GPU SM Utilization (Average): x1000c0s5b0n0:(gpu0:4%)
-	GPU SM Utilization (Max): x1000c0s5b0n0:(gpu0:40%)
-	GPU SM Utilization (Min): x1000c0s5b0n0:(gpu0:0%)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Warning: None
-GPU application profile: Low
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-

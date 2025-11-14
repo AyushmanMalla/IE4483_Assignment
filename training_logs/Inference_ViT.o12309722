@@ -1,0 +1,37 @@
+--- Inference Job of ViT Started on x1000c1s4b0n0 at Fri Nov 14 12:13:15 +08 2025 ---
+Loading model from: best_vit_model.pth
+Found 500 images in the test set.
+Class mapping used for predictions: {'cat': 0, 'dog': 1}
+Running Inference:   0%|          | 0/4 [00:00<?, ?it/s]Running Inference:  25%|██▌       | 1/4 [00:01<00:03,  1.04s/it]Running Inference:  50%|█████     | 2/4 [00:01<00:01,  1.72it/s]Running Inference:  75%|███████▌  | 3/4 [00:01<00:00,  2.30it/s]Running Inference: 100%|██████████| 4/4 [00:01<00:00,  2.80it/s]Running Inference: 100%|██████████| 4/4 [00:01<00:00,  2.20it/s]
+
+Inference complete. Results saved to submission_new.csv
+--- Job Finished at Fri Nov 14 12:13:23 +08 2025 ---
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2025-11-14 12:13:24.850632:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 12309722.pbs101
+	Project: personal-mall0006
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(16), Used(16)
+	CPU Time Used: 00:00:09
+	Memory: Requested(110gb), Used(1953452kb)
+	Vmem Used: 123494356kb
+	Walltime: Requested(04:00:00), Used(00:00:08)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (x1000c1s4b0n0:ncpus=16:ngpus=1:mem=115343360kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	GPU Duration: 9.51secs
+	GPU Power Consumed: 0W
+	GPU Max GPU Memory Used: 0.0B
+	Memory Throughput Rate (Average): x1000c1s4b0n0:(gpu1:0%)
+	Memory Throughput Rate (Max): x1000c1s4b0n0:(gpu1:0%)
+	Memory Throughput Rate (Min): x1000c1s4b0n0:(gpu1:0%)
+	GPU SM Utilization (Average): x1000c1s4b0n0:(gpu1:0%)
+	GPU SM Utilization (Max): x1000c1s4b0n0:(gpu1:0%)
+	GPU SM Utilization (Min): x1000c1s4b0n0:(gpu1:0%)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Warning: All GPUs have a percentage of 0 utilisation.
+GPU application profile: Idle
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

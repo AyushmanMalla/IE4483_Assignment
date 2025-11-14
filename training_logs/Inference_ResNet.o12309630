@@ -1,0 +1,37 @@
+--- Inference Job of ResNet Started on x1000c1s4b0n0 at Fri Nov 14 11:51:50 +08 2025 ---
+Loading model from: best_resnet_model_tweaked.pth
+Found 500 images in the test set.
+Class mapping used for predictions: {'cat': 0, 'dog': 1}
+Running Inference:   0%|          | 0/4 [00:00<?, ?it/s]Running Inference:  25%|██▌       | 1/4 [00:03<00:11,  3.83s/it]Running Inference:  75%|███████▌  | 3/4 [00:03<00:01,  1.03s/it]Running Inference: 100%|██████████| 4/4 [00:04<00:00,  1.01s/it]
+
+Inference complete. Results saved to submission_resnet.csv
+--- Job Finished at Fri Nov 14 11:52:14 +08 2025 ---
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2025-11-14 11:52:16.421152:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 12309630.pbs101
+	Project: personal-mall0006
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(16), Used(16)
+	CPU Time Used: 00:00:09
+	Memory: Requested(110gb), Used(2068656kb)
+	Vmem Used: 107125272kb
+	Walltime: Requested(04:00:00), Used(00:00:24)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (x1000c1s4b0n0:ncpus=16:ngpus=1:mem=115343360kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	GPU Duration: 26.12secs
+	GPU Power Consumed: 21.03W
+	GPU Max GPU Memory Used: 2.29GB
+	Memory Throughput Rate (Average): x1000c1s4b0n0:(gpu2:0%)
+	Memory Throughput Rate (Max): x1000c1s4b0n0:(gpu2:0%)
+	Memory Throughput Rate (Min): x1000c1s4b0n0:(gpu2:0%)
+	GPU SM Utilization (Average): x1000c1s4b0n0:(gpu2:0%)
+	GPU SM Utilization (Max): x1000c1s4b0n0:(gpu2:0%)
+	GPU SM Utilization (Min): x1000c1s4b0n0:(gpu2:0%)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Warning: All GPUs have a percentage of 0 utilisation.
+GPU application profile: Idle
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

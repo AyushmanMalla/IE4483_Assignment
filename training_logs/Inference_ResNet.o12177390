@@ -1,37 +1,0 @@
---- Inference Job of ResNet Started on x1000c0s5b0n0 at Sun Oct 26 20:54:17 +08 2025 ---
-Loading model from: best_resnet_model.pth
-Found 500 images in the test set.
-Class mapping used for predictions: {'cat': 0, 'dog': 1}
-Running Inference:   0%|          | 0/4 [00:00<?, ?it/s]Running Inference:  25%|██▌       | 1/4 [00:01<00:03,  1.33s/it]Running Inference:  75%|███████▌  | 3/4 [00:01<00:00,  2.62it/s]Running Inference: 100%|██████████| 4/4 [00:01<00:00,  2.59it/s]
-
-Inference complete. Results saved to submission_resnet.csv
---- Job Finished at Sun Oct 26 20:54:22 +08 2025 ---
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-			Resource Usage on 2025-10-26 20:54:24.322900:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	JobId: 12177390.pbs101
-	Project: personal-mall0006
-	Exit Status: 0
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	NCPUs: Requested(16), Used(16)
-	CPU Time Used: 00:00:08
-	Memory: Requested(110gb), Used(1642292kb)
-	Vmem Used: 0kb
-	Walltime: Requested(04:00:00), Used(00:00:06)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	Execution Nodes Used: (x1000c0s5b0n0:ncpus=16:ngpus=1:mem=115343360kb)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	GPU Duration: 7.67secs
-	GPU Power Consumed: 0W
-	GPU Max GPU Memory Used: 0.0B
-	Memory Throughput Rate (Average): x1000c0s5b0n0:(gpu0:0%)
-	Memory Throughput Rate (Max): x1000c0s5b0n0:(gpu0:0%)
-	Memory Throughput Rate (Min): x1000c0s5b0n0:(gpu0:0%)
-	GPU SM Utilization (Average): x1000c0s5b0n0:(gpu0:4%)
-	GPU SM Utilization (Max): x1000c0s5b0n0:(gpu0:4%)
-	GPU SM Utilization (Min): x1000c0s5b0n0:(gpu0:4%)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Warning: None
-GPU application profile: Low
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
