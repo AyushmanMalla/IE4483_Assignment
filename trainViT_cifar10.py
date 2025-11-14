@@ -11,7 +11,7 @@ import numpy as np
 # --- 1. Configuration ---
 # Hyperparameters
 LEARNING_RATE = 5e-5
-BATCH_SIZE = 64 # Smaller batch size for larger model
+BATCH_SIZE = 256 
 EPOCHS = 10 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 MODEL_NAME = "vit_b_16"
